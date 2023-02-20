@@ -28,7 +28,7 @@ class Database
         }
     }
 
-    public function insertuser($datos, $db)
+   public function insertuser($datos, $db)
     {
 
         $this->datos = $datos;
