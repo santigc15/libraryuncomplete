@@ -8,7 +8,7 @@ class User
     {
         if (isset($_POST['register'])) {
             require_once("./models/Database.php");
-            require_once("./models/Orm.php");
+           
             $datos = array();
             $datos["nombre"] = $_POST['name'];
             $datos["apellidos"] = $_POST['surname'];
