@@ -15,12 +15,10 @@ class User
             $datos["dni"] = $_POST['dni'];
             $datos["email"] = $_POST['email'];
             $datos["contrasena"] = $_POST['password'];
-        
 
-       
+            $db = new Database();
 
-            
-
+            $db->insertuser($datos, $db);
         } else {
             require_once("./views/register.php");
         }
